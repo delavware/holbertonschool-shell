@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -nv !(../*)/*.html ../
+find . -name "*.html" -newer ../ -exec cp -n {} ../ \ 
