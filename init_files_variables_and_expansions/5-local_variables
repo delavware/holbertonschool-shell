@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "$(set | grep -E '^[^$]*=') $(env | sort) $(declare -f | sort)"
