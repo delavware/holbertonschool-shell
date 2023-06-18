@@ -1,4 +1,8 @@
 README.md for init_files
 # TASKS
 # 01. Create a script that prints hello user, where user is the current Linux user.
-## 01-- echo "hello $(whoami)"
+## RES: echo "hello $(whoami)"
+
+# 09. Write a script that prints the result of POWER divided by DIVIDE, followed by a new line.
+# POWER and DIVIDE are environment variables
+## RES: printf "%d\n" $((POWER / DIVIDE)) 
