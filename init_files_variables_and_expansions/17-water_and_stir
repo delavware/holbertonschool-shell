@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%x\n" "$(( $(printf "%d" "'$WATER") + $(printf "%d" "'$STIR") ))" | tr '[:lower:]' '[:upper:]'
+printf '%x\n' "$(( $(printf '%d' "'$WATER") + $(printf '%d' "'$STIR") ))" | tr '[:lower:]' '[:upper:]' | tr -d '\n'
