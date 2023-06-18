@@ -1,0 +1,2 @@
+#!/bin/bash
+grep -n '' | awk -F: 'NR % 2 == 1 {print $2}'

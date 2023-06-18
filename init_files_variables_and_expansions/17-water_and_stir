@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(($WATER + $STIR)) | bc -l -o2 | tr 0123456789 bestchol
+echo $((10#$(echo "$WATER" | tr "water" "0123456789") + 10#$(echo "$STIR" | tr "stir" "0123456789")) | tr "0123456789" "bestchol"))
