@@ -1,2 +1,2 @@
 #!/bin/bash
-printf '%o' $((tr water 01234 <<< "$WATER") + tr stir 01234 <<< "$STIR") | tr 01234567 behlnort
+printf '%-2o' $((tr water 01234 <<< "$WATER") + tr stir 01234 <<< "$STIR") | tr 01234567 behlnort
