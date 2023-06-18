@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((36#$(echo $WATER | tr '[a-j]' '[0-9]') + 36#$(echo $STIR | tr '[k-s]' '[0-9]')))|tr '[0-9]' '[a-j]'
+printf "%x\n" "$(( $(printf "%d" "'$WATER") + $(printf "%d" "'$STIR") ))" | tr '[:lower:]' '[:upper:]'
