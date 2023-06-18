@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$(echo $WATER | tr -cd '[a-jA-J]' | tr '[:lower:]' '[:upper:]' | tr '[:A-J]' '[:0-9]') + $(echo $STIR | tr -cd '[k-sK-S]' | tr '[:lower:]' '[:upper:]' | tr '[:K-S]' '[:0-9]')"|bc|tr '[:digit:]' 'abcdefghij'
+echo $((36#$(echo $WATER | tr '[a-j]' '[0-9]') + 36#$(echo $STIR | tr '[k-s]' '[0-9]')))|tr '[0-9]' '[a-j]'
