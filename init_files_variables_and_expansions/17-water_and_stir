@@ -1,2 +1,2 @@
 #!/bin/bash
-printf '%-2o' $((tr water 01234 <<< "$WATER") + tr stir 01234 <<< "$STIR") | tr 01234567 behlnort
+echo "$(echo $WATER | tr -cd '[a-jA-J]' | tr '[:lower:]' '[:upper:]' | tr '[:A-J]' '[:0-9]') + $(echo $STIR | tr -cd '[k-sK-S]' | tr '[:lower:]' '[:upper:]' | tr '[:K-S]' '[:0-9]')"|bc|tr '[:digit:]' 'abcdefghij'
