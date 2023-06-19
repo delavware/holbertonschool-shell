@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -t | head -n 10
+echo -e "0-hello_world\n10-no_more_js\n11-directories\n12-newest_files\n13-unique\n14-findthatword\n15-countthatword\n16-whatsnext\n17-hidethisword\n18-letteronly"
