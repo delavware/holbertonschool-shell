@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lt | grep "^-" | awk 'NR <= 10 {print $NF}'
+ls -lt | grep "^-" | awk 'NR <= 10 {print substr($0, index($0,$9))}'
